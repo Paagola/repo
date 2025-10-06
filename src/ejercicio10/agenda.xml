@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "agenda.dtd">
+<agenda xmlns:g="http://purl.org/dc/elements/1.1/">
+    <g:telefono id="2234244234">
+        <g:contacto1>Maria</g:contacto1>
+        <g:tlf>234234245</g:tlf>
+        <g:contacto2>Juan</g:contacto2>
+        <g:tlf>5235325</g:tlf>
+        <g:tlf>3223525</g:tlf>
+        <g:contacto3>Marco</g:contacto3>
+        <g:tlf>2342352</g:tlf>
+    </g:telefono>
+</agenda>

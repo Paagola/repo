@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros SYSTEM "ejercicio7.dtd">
+<libros>
+    <libro id="1">
+        <titulo>El Quijote</titulo>
+        <autor>Cervantes</autor>
+    </libro>
+    <libro id="2">
+        <titulo>Cien años de soledad</titulo>
+        <autor>García Márquez</autor>
+    </libro>
+</libros>

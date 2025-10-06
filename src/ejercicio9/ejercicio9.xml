@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "ejercicio9.dtd">
+<catalogo xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <libro id="1">
+        <dc:title>El Quijote</dc:title>
+        <dc:creator>Miguel de Cervantes</dc:creator>
+        <dc:publisher>Editorial Clásicos</dc:publisher>
+        <dc:date>1605</dc:date>
+    </libro>
+    <libro id="2">
+        <dc:title>Cien años de soledad</dc:title>
+        <dc:creator>Gabriel Garcia Márquez</dc:creator>
+        <dc:date>1967</dc:date>
+        <dc:publisher>Editorial Sudamericana</dc:publisher>
+    </libro>
+</catalogo>

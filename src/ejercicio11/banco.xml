@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE banco SYSTEM "banco.dtd">
+<banco>
+    <sucursal codigo="S001">
+        <cuenta codigo="C1001">
+            <cliente id="CL001">
+                <nombre>Juan Pérez</nombre>
+                <dni>12345678A</dni>
+            </cliente>
+            <cliente id="CL002">
+                <nombre>Laura Gómez</nombre>
+                <dni>98765432A</dni>
+            </cliente>
+        </cuenta>
+        <cuenta codigo="C1002">
+            <cliente id="CL003">
+                <nombre>Alberto Rodriguez</nombre>
+                <dni>12345678B</dni>
+            </cliente>
+        </cuenta>
+    </sucursal>
+    <sucursal codigo="S002">
+        <cuenta codigo="C2001">
+            <cliente id="CB001">
+                <nombre>Maria Gómez</nombre>
+                <dni>12431214Y</dni>
+            </cliente>
+            <cliente id="CB002">
+                <nombre>Antonio Martín</nombre>
+                <dni>35426346U</dni>
+            </cliente>
+        </cuenta>
+        <cuenta codigo="C2002">
+            <cliente id="CB003">
+                <nombre>Ramón García</nombre>
+                <dni>35024739G</dni>
+            </cliente>
+        </cuenta>
+    </sucursal>
+</banco>

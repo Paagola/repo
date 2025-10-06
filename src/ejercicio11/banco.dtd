@@ -1,0 +1,9 @@
+<!ELEMENT banco (sucursal+)>
+<!ELEMENT sucursal (cuenta+)>
+<!ATTLIST sucursal codigo CDATA #REQUIRED>
+<!ELEMENT cuenta (cliente+)>
+<!ATTLIST cuenta codigo CDATA #REQUIRED>
+<!ELEMENT cliente (nombre, dni)>
+<!ATTLIST cliente id CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>

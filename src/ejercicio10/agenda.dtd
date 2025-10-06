@@ -1,0 +1,7 @@
+<!ELEMENT agenda (g:telefono)>
+<!ELEMENT g:telefono (g:contacto1|g:contacto2|g:contacto3|g:tlf)*>
+<!ATTLIST g:telefono id CDATA #REQUIRED>
+<!ELEMENT g:contacto1 (#PCDATA)>
+<!ELEMENT g:contacto2 (#PCDATA)>
+<!ELEMENT g:contacto3 (#PCDATA)>
+<!ELEMENT g:tlf (#PCDATA)>
