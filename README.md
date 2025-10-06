@@ -2,19 +2,8 @@
 
 Este repositorio contiene la resolución de los ejercicios sobre **lenguajes de marcas**.  Cada enunciado se presenta como una sección con su respuesta en texto y, cuando corresponde, se incluye un enlace a la solución en formato XML junto con su definición de tipo de documento (DTD) dentro del directorio [`src`](./src).
 
-## Índice de ejercicios
+Para dar una mejor explicación de los ejercicios y una mejora visual al `Readme.md` me he apoyado de la IA, pero estos ejercicios los he hecho completamente yo.
 
-- [Ejercicio 1](#ejercicio-1)
-- [Ejercicio 2](#ejercicio-2)
-- [Ejercicio 3](#ejercicio-3)
-- [Ejercicio 4](#ejercicio-4)
-- [Ejercicio 5](#ejercicio-5)
-- [Ejercicio 6](#ejercicio-6)
-- [Ejercicio 7](#ejercicio-7)
-- [Ejercicio 8](#ejercicio-8)
-- [Ejercicio 9](#ejercicio-9)
-- [Ejercicio 10](#ejercicio-10)
-- [Ejercicio 11](#ejercicio-11)
 
 ---
 
@@ -34,11 +23,10 @@ Este repositorio contiene la resolución de los ejercicios sobre **lenguajes de 
 
 Un lenguaje de marcas se caracteriza por emplear etiquetas para estructurar contenido de manera que sea comprensible tanto por seres humanos como por ordenadores.  Las opciones correctas son:
 
-- ✅ **Están basados en etiquetas o marcas.**
-- ✅ **Son legibles tanto por personas como por máquinas.**
-- ✅ **Permiten estructurar la información.**
+- **Están basados en etiquetas o marcas.**
+- **Son legibles tanto por personas como por máquinas.**
+- **Permiten estructurar la información.**
 
-Las demás afirmaciones son incorrectas: los lenguajes de marcas no se usan únicamente para algoritmos matemáticos y no se limitan al diseño web.
 
 ---
 
@@ -68,8 +56,6 @@ Las demás afirmaciones son incorrectas: los lenguajes de marcas no se usan úni
 | **Lenguajes de presentación** | HTML, MathML, Markdown                                          |
 | **Lenguajes de datos**        | XML                                                            |
 | **Lenguajes especializados**   | SVG, MathML, LaTeX                                             |
-
-> *Nota*: algunos lenguajes, como *MathML*, pueden considerarse de presentación y especializados, ya que se centran en la representación de matemáticas de forma estructurada.
 
 ---
 
@@ -133,10 +119,10 @@ XML está diseñado para intercambiar información estructurada entre plataforma
 
 | Afirmación | Valor | Comentario                                            |
 |------------|------|------------------------------------------------------|
-| a) XML tiene etiquetas predefinidas como `<body>` o `<table>`. | **F**  | En XML no existen etiquetas predefinidas; es el usuario quien las define según sus necesidades. |
-| b) XML permite crear etiquetas definidas por el usuario.         | **V**  | Las etiquetas son libres siempre que se respeten las reglas de sintaxis. |
-| c) XML distingue entre mayúsculas y minúsculas en sus etiquetas. | **V**  | `<Libro>` y `<libro>` se consideran etiquetas diferentes. |
-| d) Un documento XML debe tener siempre una única etiqueta raíz.    | **V**  | Todo documento bien formado contiene un único elemento raíz que engloba al resto de elementos. |
+| a) XML tiene etiquetas predefinidas como `<body>` o `<table>`. | **F**  | 
+| b) XML permite crear etiquetas definidas por el usuario.         | **V**  |
+| c) XML distingue entre mayúsculas y minúsculas en sus etiquetas. | **V**  | 
+| d) Un documento XML debe tener siempre una única etiqueta raíz.    | **V**  | 
 
 ---
 
@@ -161,9 +147,8 @@ XML está diseñado para intercambiar información estructurada entre plataforma
 
 **Respuesta**
 
-El documento debe tener atributos con valores entrecomillados, cierre de etiquetas correcto y una declaración opcional de tipo de documento para validar su estructura.  La solución completa y su DTD se encuentran en el directorio [`src/ejercicio7`](./src/ejercicio7).
-
-[`ejercicio7.xml`](./src/ejercicio7/ejercicio7.xml) contiene el XML corregido y [`ejercicio7.dtd`](./src/ejercicio7/ejercicio7.dtd) define su estructura.
+El documento debe tener atributos con valores entrecomillados, cierre de etiquetas correcto y una declaración opcional de tipo de documento.  La solución completa está en
+ [`src/ejercicio7`](./src/ejercicio7) y [`ejercicio7.dtd`](./src/ejercicio7/ejercicio7.dtd) define su estructura.
 
 ---
 
@@ -175,13 +160,22 @@ El documento debe tener atributos con valores entrecomillados, cierre de etiquet
 >
 > **Documento A**
 >
-> *(Texto del documento A no reproducido)*
+> ```xml
+> <persona>
+>   <nombre>Ana</nombre>
+>   <edad>25</edad>
+> </persona>
+> ```
 >
 > **Documento B**
 >
-> *(Texto del documento B no reproducido)*
+> ```xml
+>  <persona>
+>    <nombre>Ana</Nombre>
+>    <Edad>25</Edad>
+>  </persona>
+> ```
 >
-> El enunciado indica que el Documento A está bien formado y que el Documento B no lo está porque `</Nombre>` no se escribe en minúscula.
 
 **Respuesta**
 
@@ -197,7 +191,7 @@ El Documento A respeta las reglas básicas de XML (elemento raíz único, etiqu
 
 **Respuesta**
 
-Se ha creado un documento XML denominado **`ejercicio9.xml`** que declara el espacio de nombres Dublin Core (`xmlns:dc="http://purl.org/dc/elements/1.1/"`) y utiliza los elementos `dc:title`, `dc:creator`, `dc:publisher` y `dc:date` para describir cada libro.  Puedes consultar el código fuente y su DTD en el directorio del proyecto:
+Se ha creado un documento XML denominado **`ejercicio9.xml`** que declara el espacio de nombres Dublin Core (`xmlns:dc="http://purl.org/dc/elements/1.1/"`) y utiliza los elementos `dc:title`, `dc:creator`, `dc:publisher` y `dc:date` para describir cada libro:
 
 - [`ejercicio9.xml`](./src/ejercicio9/ejercicio9.xml) — contiene el catálogo de libros con metadatos.
 - [`ejercicio9.dtd`](./src/ejercicio9/ejercicio9.dtd) — describe la estructura del documento y define las etiquetas con prefijo `dc`.
@@ -211,7 +205,9 @@ Se ha creado un documento XML denominado **`ejercicio9.xml`** que declara el esp
 > Diseña un documento XML que represente una agenda de contactos con al menos 2 contactos.  Debe:
 >
 >  • Estar bien formado.
+> 
 >  • Incluir atributos en algún elemento.
+> 
 >  • Usar un espacio de nombres para los datos de dirección.
 
 **Respuesta**
@@ -230,30 +226,18 @@ La agenda se ha modelado como un elemento raíz `agenda` con un prefijo de espac
 > Elabora y puebla con datos un documento XML bien formado basándote en los siguientes supuestos.  El nombre del archivo generado deberá llamarse **banco.xml**.
 >
 >  a. El banco tiene sucursales, cada una de ellas identificadas por un código.
+> 
 >  b. Cada sucursal tiene asignadas una serie de cuentas corrientes, que igualmente se identifican mediante un código.
+> 
 >  c. La cuenta tiene asignados uno o varios clientes.
 
 **Respuesta**
 
-Se ha creado el archivo **`banco.xml`** que refleja la jerarquía indicada: el elemento raíz `banco` contiene varias `sucursal` con atributo `codigo`.  Cada `sucursal` agrupa varias `cuenta`, y cada `cuenta` contiene uno o más elementos `cliente` con atributos `id` y subelementos `nombre` y `dni` para identificar a los titulares.  La definición de tipo de documento (DTD) asegura que esta estructura se mantenga.
+Se ha creado el archivo **`banco.xml`** que refleja la jerarquía indicada: el elemento raíz `banco` contiene varias `sucursal` con atributo `codigo`.  Cada `sucursal` agrupa varias `cuenta`, y cada `cuenta` contiene uno o más elementos `cliente` con atributos `id` y subelementos `nombre` y `dni` para identificar a los titulares.
 
-Puedes acceder a los ficheros desde el directorio [`src/ejercicio11`](./src/ejercicio11):
+**Ejercicio:** [`src/ejercicio11`](./src/ejercicio11):
 
 - [`banco.xml`](./src/ejercicio11/banco.xml)
 - [`banco.dtd`](./src/ejercicio11/banco.dtd)
 
 ---
-
-## Cómo trabajar con estos archivos
-
-Cada documento XML se acompaña de un fichero `.dtd` que define las reglas de estructura y las etiquetas permitidas.  Para validar un XML con su DTD se puede utilizar un parser que soporte definiciones de tipo de documento (por ejemplo, `xmllint` en Linux).
-
-Ejemplo de validación desde la línea de comandos:
-
-```bash
-xmllint --noout --dtdvalid src/ejercicio9/ejercicio9.dtd src/ejercicio9/ejercicio9.xml
-```
-
-Este comando comprueba que el archivo `ejercicio9.xml` cumple con su DTD y no devuelve errores si es correcto.
-
-¡Gracias por revisar estos ejercicios!
