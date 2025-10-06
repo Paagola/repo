@@ -72,9 +72,13 @@ Un lenguaje de marcas se caracteriza por emplear etiquetas para estructurar cont
 > 5. RSS
 >
 > a) Descripción de datos geográficos
+> 
 > b) Creación de fórmulas matemáticas
+> 
 > c) Publicación de contenidos sindicados (noticias, blogs)
+> 
 > d) Representación de páginas web
+> 
 > e) Imágenes vectoriales escalables
 
 **Respuesta**
