@@ -121,9 +121,9 @@ XML está diseñado para intercambiar información estructurada entre plataforma
 
 **Respuesta**
 
-| Afirmación | Valor | Comentario                                            |
-|------------|------|------------------------------------------------------|
-| a) XML tiene etiquetas predefinidas como `<body>` o `<table>`. | **F**  | 
+| Afirmación | Valor | 
+|------------|------|
+| a) XML tiene etiquetas predefinidas como `<body>` o `<table>`. | **F**  |
 | b) XML permite crear etiquetas definidas por el usuario.         | **V**  |
 | c) XML distingue entre mayúsculas y minúsculas en sus etiquetas. | **V**  | 
 | d) Un documento XML debe tener siempre una única etiqueta raíz.    | **V**  | 
